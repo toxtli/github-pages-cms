@@ -4,13 +4,18 @@ function init() {
   });
 }
 
-function loadLibrary(url, next) {  
+function loadLibrary(url, next, extra) {  
   var s = document.createElement('script');
   s.type = 'text/javascript';
-  s.src = url;
+  if (extra) {
+    for(var i in extra) {
+      s[i] = extra[i];
+    }
+  }
   if (next) {
     s.onload = next;
   }
+  s.src = url;
   (top.document.getElementsByTagName('head')[0] || top.document.body).appendChild(s);
   return s;
 }
@@ -31,7 +36,7 @@ function loadEditor() {
   loadStyle('//www.carlostoxtli.com/github-pages-cms/aloha.css', function(){
       loadLibrary('//www.carlostoxtli.com/github-pages-cms/aloha.js', function(){
         init();
-      });
+      }, {"data-aloha-plugins":"common/ui,common/format,common/highlighteditables,common/link"});
   });
 }
 
