@@ -28,8 +28,8 @@ function loadStyle(url, next) {
 }
 
 function loadEditor() {
-  loadLibrary('//www.carlostoxtli.com/github-pages-cms/aloha.js', function(){
-      loadStyle('//www.carlostoxtli.com/github-pages-cms/aloha.css', function(){
+  loadStyle('//www.carlostoxtli.com/github-pages-cms/aloha.css', function(){
+      loadLibrary('//www.carlostoxtli.com/github-pages-cms/aloha.js', function(){
         init();
       });
   });
