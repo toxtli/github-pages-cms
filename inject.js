@@ -11,7 +11,7 @@ function loadLibrary(url, next) {
 }
 
 function loadRaptor() {
-  loadLibrary('//www.carlostoxtli.com/github-pages-cms/raptor.js');
+  var s = loadLibrary('//www.carlostoxtli.com/github-pages-cms/raptor.js');
   s.onload = init;
 }
 
