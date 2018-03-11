@@ -1,4 +1,4 @@
-function loadLibrary(url) {  
+function loadLibrary(url, next) {  
   var s = document.createElement('script');
   s.type = 'text/javascript';
   s.src = url;
@@ -7,13 +7,17 @@ function loadLibrary(url) {
 }
 
 function loadLibraries() {
-  loadLibrary('//www.carlostoxtli.com/github-pages-cms/raptor.js');
   if(typeof jQuery=='undefined') {
     var s = loadLibrary('//code.jquery.com/jquery-3.3.1.js');
-    s.onload = init;
+    s.onload = loadRaptor;
   } else {
-    init();
+    loadRaptor();
   }
+}
+
+function loadRaptor() {
+  loadLibrary('//www.carlostoxtli.com/github-pages-cms/raptor.js');
+  s.onload = init;
 }
 
 function init() {
