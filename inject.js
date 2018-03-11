@@ -1,5 +1,7 @@
 function init() {
-  $('body').raptor();
+  Aloha.ready( function() {
+            Aloha.jQuery('body').aloha();
+  });
 }
 
 function loadLibrary(url, next) {  
