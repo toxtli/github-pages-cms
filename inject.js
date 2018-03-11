@@ -1,7 +1,7 @@
 function init() {
   Aloha.ready( function() {
     //Aloha.jQuery('body').aloha();
-    Aloha.jQuery('#instructions').aloha();
+    Aloha.jQuery('body').children().aloha();
   });
 }
 
