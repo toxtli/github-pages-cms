@@ -1,6 +1,6 @@
 function init() {
   Aloha.ready( function() {
-            Aloha.jQuery('body').aloha();
+    Aloha.jQuery('body').aloha();
   });
 }
 
