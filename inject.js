@@ -35,23 +35,13 @@ function loadStyle(url, next) {
 
 function loadEditor() {
   loadStyle('//www.carlostoxtli.com/github-pages-cms/aloha.css', function(){
-      loadLibrary('//www.carlostoxtli.com/github-pages-cms/aloha.js', function(){
-        init();
-      }, {"data-aloha-plugins":"common/ui,common/format,common/highlighteditables,common/link"});
-  });
-}
-
-function loadLibraries() {
-  loadLibrary('//www.carlostoxtli.com/github-pages-cms/require.js', function(){
-    if(typeof jQuery=='undefined') {
-      var s = loadLibrary('//code.jquery.com/jquery-3.3.1.js', function(){
-        loadEditor();
+      loadLibrary('//www.carlostoxtli.com/github-pages-cms/require.js', function(){
+        loadLibrary('//www.carlostoxtli.com/github-pages-cms/aloha.js', function(){
+          init();
+        }, {"data-aloha-plugins":"common/ui,common/format,common/highlighteditables,common/link"});
       });
-    } else {
-      loadEditor();
-    }
   });
 }
 
-loadLibraries();
+loadEditor();
 alert('Code injected');
