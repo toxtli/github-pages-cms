@@ -44,4 +44,4 @@ function loadEditor() {
 }
 
 loadEditor();
-alert('Code injected');
+//alert('Code injected');
