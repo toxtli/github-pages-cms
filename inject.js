@@ -38,7 +38,7 @@ function loadEditor() {
       loadLibrary('//www.carlostoxtli.com/github-pages-cms/lib/require.js', function(){
         loadLibrary('//www.carlostoxtli.com/github-pages-cms/lib/aloha.js', function(){
           init();
-        }, {"data-aloha-plugins":"common/ui,common/format,common/table,common/list,common/link,common/highlighteditables,common/undo,common/contenthandler,common/paste,common/characterpicker,common/commands,common/block,common/image,common/abbr,common/horizontalruler,common/align,common/dom-to-xhtml"});
+        }, {"data-aloha-plugins":"common/ui,common/format"});
       });
   });
 }
