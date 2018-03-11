@@ -38,7 +38,7 @@ function loadEditor() {
       loadLibrary('//www.carlostoxtli.com/github-pages-cms/lib/require.js', function(){
         loadLibrary('//www.carlostoxtli.com/github-pages-cms/lib/aloha.js', function(){
           init();
-        }, {"data-aloha-plugins":"common/ui,common/format,common/table,common/list,common/link,common/highlighteditables,common/undo"});
+        }, {"data-aloha-plugins":"common/ui,common/format,common/table,common/list,common/link,common/highlighteditables,common/undo,common/paste,common/characterpicker,common/commands,common/block,common/image,common/abbr,common/horizontalruler,common/align,common/dom-to-xhtml,extra/textcolor,extra/formatlesspaste,extra/hints,extra/toc,extra/headerids,extra/listenforcer,extra/metaview,extra/numerated-headers,extra/ribbon,extra/textcolor,extra/wai-lang,extra/linkbrowser,extra/imagebrowser,extra/cite"});
         //common/ui,common/format,common/table,common/list,common/link,common/highlighteditables,common/undo,common/contenthandler,common/paste,common/characterpicker,common/commands,common/block,common/image,common/abbr,common/horizontalruler,common/align,common/dom-to-xhtml,extra/textcolor,extra/formatlesspaste,extra/hints,extra/toc,extra/headerids,extra/listenforcer,extra/metaview,extra/numerated-headers,extra/ribbon,extra/textcolor,extra/wai-lang,extra/linkbrowser,extra/imagebrowser,extra/cite
       });
   });
