@@ -10,7 +10,7 @@ function loadLibrary(url, next, extra) {
   s.type = 'text/javascript';
   if (extra) {
     for(var i in extra) {
-      s[i] = extra[i];
+      s.setAttribute(i, extra[i]);
     }
   }
   if (next) {
