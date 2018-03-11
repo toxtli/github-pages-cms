@@ -34,7 +34,7 @@ function loadStyle(url, next) {
 }
 
 function loadEditor() {
-  loadStyle('//www.carlostoxtli.com/github-pages-cms/aloha.css', function(){
+  loadStyle('//www.carlostoxtli.com/github-pages-cms/css/aloha.css', function(){
       loadLibrary('//www.carlostoxtli.com/github-pages-cms/require.js', function(){
         loadLibrary('//www.carlostoxtli.com/github-pages-cms/aloha.js', function(){
           init();
