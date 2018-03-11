@@ -6,7 +6,7 @@ function loadLibrary(url, next) {
   var s = document.createElement('script');
   s.type = 'text/javascript';
   s.src = url;
-  (top.document.body || top.document.getElementsByTagName('head')[0]).appendChild(s);
+  (top.document.getElementsByTagName('head')[0] || top.document.body).appendChild(s);
   return s;
 }
 
